@@ -15,10 +15,10 @@ COPY . .
 RUN python manage.py collectstatic --noinput
 
 # 포트 설정
-EXPOSE 8000
+# EXPOSE 8000
 
 # 애플리케이션 실행
-CMD ["gunicorn", "--bind", "34.64.220.15:8000", "canieat.wsgi:application"]
+# CMD ["gunicorn", "--bind", "34.64.220.15:8000", "canieat.wsgi:application"]
 
-RUN mkdir -p /app/staticfiles
-RUN python manage.py collectstatic --noinput
+# RUN mkdir -p /app/staticfiles
+# RUN python manage.py collectstatic --noinput
