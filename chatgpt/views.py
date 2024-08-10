@@ -15,7 +15,7 @@ def get_completion(prompt):
 
     # OpenAI의 ChatCompletion API를 호출하여 응답을 생성합니다.
     query = openai.ChatCompletion.create(
-        model="gpt-4o",  # 사용할 모델 지정
+        model="gpt-4",  # 사용할 모델 지정
         messages=[
             {'role': 'user', 'content': prompt}  # 사용자의 프롬프트를 메시지로 전달
         ],
