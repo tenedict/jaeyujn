@@ -127,4 +127,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',  # SwiftUI 앱의 로컬 서버 주소
     'http://127.0.0.1:3000',  # SwiftUI 앱의 로컬 서버 주소
+   ' http://34.64.220.15:8000/',
 ]
