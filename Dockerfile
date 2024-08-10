@@ -15,7 +15,7 @@ COPY . .
 RUN python manage.py collectstatic --noinput
 
 # 포트 설정
-EXPOSE 8080
+EXPOSE 8000
 
 # 애플리케이션 실행
 CMD ["gunicorn", "--bind", "0.0.0.0:8080", "canieat.wsgi:application"]
