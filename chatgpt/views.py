@@ -6,10 +6,15 @@ from django.shortcuts import render
 from django.http import JsonResponse 
 import openai
 import os
+from pathlib import Path
+import os
 from dotenv import load_dotenv
 
+BASE_DIR = Path(__file__).resolve().parent.parent
+load_dotenv(BASE_DIR / '.env')
 
-load_dotenv()
+# 환경 변수를 사용하는 예시
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 # API 키 불러오기
 openai.api_key = os.getenv('OPENAI_API_KEY')
