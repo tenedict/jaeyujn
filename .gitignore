@@ -1,0 +1,7 @@
+# .env 파일 제외
+.env
+
+# Django와 관련된 기본 제외 항목
+*.pyc
+__pycache__/
+db.sqlite3
