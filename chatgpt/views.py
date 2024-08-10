@@ -5,8 +5,7 @@ from django.http import JsonResponse
 import openai
 import os
 
-openai.api_key = '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'
-#앞서 자신이 부여받은 API key를 넣으면 된다. 절대 외부에 공개해서는 안된다.
+openai.api_key = 'sk-svcacct-wqFvghT-PlMbVjYhsHtgjSER1UPsILezxPbblZkFS343ST3BlbkFJCucjx-EWBkDwor3rdjzLsVP6-BPgaJBOqHnfpcstHL4AA'
 
 def get_completion(prompt): 
 	print(prompt) 
