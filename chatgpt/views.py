@@ -8,7 +8,7 @@ import os
 
 
 # 환경 변수에서 API 키 가져오기
-openai.api_key = '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'
+openai.api_key = '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'
 
 # OpenAI의 GPT-3.5 모델을 사용하여 프롬프트에 대한 응답을 생성하는 함수
 def get_completion(prompt):
