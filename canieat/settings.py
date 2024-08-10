@@ -25,8 +25,6 @@ SECRET_KEY = 'django-insecure-!#n=$rs0bdyplk8j#!dlh%0y6za^1o92$x1&1&^lx)jpnv9=81
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -128,4 +126,6 @@ CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',  # SwiftUI 앱의 로컬 서버 주소
     'http://127.0.0.1:3000',  # SwiftUI 앱의 로컬 서버 주소
    ' http://34.64.220.15:8000/',
+    'http://0.0.0.0:8000/',
+    
 ]
