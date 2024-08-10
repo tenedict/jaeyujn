@@ -1,17 +1,17 @@
+
+
 # 환경 변수에서 API 키 가져오기
 
 from django.shortcuts import render 
 from django.http import JsonResponse 
 import openai
 import os
-
-
 from dotenv import load_dotenv
 
-# .env 파일에서 환경 변수 로드하기
+
 load_dotenv()
 
-# 환경 변수에서 API 키 가져오기
+# API 키 불러오기
 openai.api_key = os.getenv('OPENAI_API_KEY')
 def get_completion(prompt): 
 	print(prompt) 
