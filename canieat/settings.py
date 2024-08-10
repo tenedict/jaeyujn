@@ -20,7 +20,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', 'default-secret-key')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
