@@ -1,5 +1,5 @@
 
-
+from dotenv import load_dotenv
 from django.shortcuts import render 
 from django.http import JsonResponse 
 import openai
